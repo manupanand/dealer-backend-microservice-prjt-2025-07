@@ -1,4 +1,4 @@
 image:
 		@echo "Docker compose"
 		
-		docker compose up build
+		docker compose up 

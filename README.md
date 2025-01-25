@@ -32,32 +32,32 @@ This project demonstrates two microservices, Dealer Details and Product List, ru
 
 ## Installation and Setup
 
-Clone the Repository:
+### Clone the Repository:
 
 ```
 git clone https://github.com/manupanand-freelance-developer/ci-cd-pipeline-project.git
 cd ci-cd-pipeline-project 
 ```
 
-Build and Start Services: Run the following command:
+### Build and Start Services: Run the following command:
 ```
     make image
     
-    ```
+```
 
-This will:
+### This will:
     - Build the Docker images for both microservices.
     - Start the containers for both services.
 
-Access the Services:
+### Access the Services:
     - Dealer Details Service: Accessible at http://localhost:8080
     - Product List Service: Accessible at http://localhost:5000
 
 
-API Endpoints
+## API Endpoints
 Dealer Details Service (http://localhost:8080)
 
-    Get Product Price by Dealer:
+### Get Product Price by Dealer:
         Endpoint: /price/:dealer/:product
         Method: GET
         Response:
@@ -66,7 +66,7 @@ Dealer Details Service (http://localhost:8080)
       "message": "ProductName costs Price at DealerName"
     }
 ```
-Get Prices of All Dealers for a Product:
+### Get Prices of All Dealers for a Product:
 
     Endpoint: /allprice/:product
     Method: GET
@@ -79,7 +79,7 @@ Get Prices of All Dealers for a Product:
           ]
         }
 ```
-Product List Service (http://localhost:5000)
+### Product List Service (http://localhost:5000)
 
     Get All Products:
         Endpoint: /products
@@ -90,7 +90,7 @@ Product List Service (http://localhost:5000)
       "products": ["Product1", "Product2", "Product3"]
     }
 ```
-Get Dealers for a Product:
+### Get Dealers for a Product:
 
     Endpoint: /getdealers/:product
     Method: GET
@@ -114,7 +114,7 @@ Notes
         Node.js microservice depends on express, cors, and nodemon.
         Flask microservice depends on Flask and flask-cors.
 
-Contributions
+#### Contributions
 
 Feel free to open issues or submit pull requests to improve this project.
 License

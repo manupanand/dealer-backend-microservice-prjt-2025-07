@@ -55,7 +55,7 @@ cd ci-cd-pipeline-project
 
 
 ## API Endpoints
-Dealer Details Service (http://localhost:8080)
+### Dealer Details Service (http://localhost:8080)
 
 ### Get Product Price by Dealer:
         Endpoint: /price/:dealer/:product

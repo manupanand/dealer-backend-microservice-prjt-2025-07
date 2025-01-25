@@ -1,2 +1,3 @@
 image:
-	docker compose up --build
+		@echo "Docker compose"
+		sudo docker compose up --build

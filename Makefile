@@ -1,3 +1,4 @@
 image:
 		@echo "Docker compose"
-		sudo docker compose up build
+		sudo -i 
+		docker compose up build

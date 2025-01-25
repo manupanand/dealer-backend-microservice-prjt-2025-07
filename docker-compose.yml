@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  dealer_details:
+    build:
+      context: ./dealer_details
+    ports:
+      - "8080:8080" # Expose the Node.js service on port 8080
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - product_list # Ensure the Python service is up before this one
+    networks:
+      - app_network
+
+  product_list:
+    build:
+      context: ./product_list
+    ports:
+      - "5000:5000" # Expose the Flask service on port 5000
+    environment:
+      - FLASK_ENV=production
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
